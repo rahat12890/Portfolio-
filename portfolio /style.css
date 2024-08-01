@@ -1,0 +1,286 @@
+ body {
+   box-sizing: border-box;
+   font-family: "Trebuchet MS", "Courier New";
+   background-color: #454556;
+   color: #fff;
+ }
+
+ header {
+   background-color: #223;
+   color: #fff;
+   padding: 18px;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+ }
+
+ nav ul {
+   display: flex;
+   flex-direction: row-reverse;
+   margin: 0;
+   padding: 0;
+   position: relative;
+ }
+
+ nav ul li {
+   display: inline;
+   margin-right: 10px;
+ }
+
+ nav ul li a {
+   color: #000;
+   font-family: "Old English Text MT", "arial";
+   font-size: 20px;
+   border-bottom: none;
+ }
+
+ .sidebar {
+   position: fixed;
+   top: 0;
+   right: 0;
+   height: 100vh;
+   width: 250px;
+   z-index: 999;
+   background-color: rgba(255, 255, 255, 0.2);
+   backdrop-filter: blur(10px);
+   box-shadow: 0 0 5px #298;
+   display: none;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: flex-start;
+ }
+
+
+ .sidebar li {
+   width: 100%;
+   transition: all ease .3s;
+ }
+
+ .sidebar li:hover {
+   background-color: #298;
+ }
+
+ .sidebar a {
+   width: 100%;
+ }
+
+ .fa.fa-close {
+   font-size: 20px;
+ }
+
+ .menu-button {
+   display: none;
+   font-size: 20px;
+ }
+
+ @media(max-width: 800px) {
+   .hideOnMobile {
+     display: none;
+   }
+
+   .menu-button {
+     display: block;
+   }
+ }
+
+ @media(max-width:400px) {
+   .sidebar {
+     width: 100%;
+   }
+ }
+
+ .logo {
+   height: 60px;
+   width: 60px;
+   border-radius: 50%;
+   position: absolute;
+   left: 0;
+   top: 0;
+ }
+
+ #hero {
+   text-align: center;
+   margin: 50px 0;
+ }
+
+ #hero h1 {
+   font-family: "Old English Text MT", cursive;
+   font-size: 40px;
+   margin-top: 15px;
+ }
+
+ #hero img {
+   border-radius: 50%;
+   width: 150px;
+   height: 150px;
+   margin: 30px;
+   border: 2px solid #00ffee;
+   transition: all ease 0.3s;
+ }
+
+ #hero img:hover {
+   box-shadow: 0 0 15px #00ffee;
+ }
+
+ section {
+   margin-bottom: 50px;
+ }
+
+ section h2 {
+   font-family: "Old English Text MT", sans-serif;
+   font-size: 30px;
+   margin-bottom: 10px;
+ }
+
+ section p {
+   font-size: 18px;
+ }
+
+ ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+ }
+
+ ul li a {
+   color: #fff;
+   text-decoration: none;
+   font-family: "Old English Text MT", sans-serif;
+   font-size: 20px;
+   border-bottom: 1px solid #fff;
+   padding-bottom: 5px;
+   transition: all ease 0.3s;
+ }
+
+ .card {
+   border: 1px solid #a4cf;
+   border-radius: 4px;
+   overflow: hidden;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+   transition: all ease 0.5s;
+ }
+
+ .card:hover {
+   box-shadow: 0 8px 12px 0 #2ce;
+ }
+
+ .card-image {
+   width: 100%;
+   height: auto;
+ }
+
+ .card-content {
+   padding: 20px;
+ }
+
+ .card-content h3 {
+   margin: 0 0 10px;
+ }
+
+ .card-content p {
+   margin: 0 0 15px;
+ }
+
+ .btn {
+   display: inline-block;
+   padding: 8px 16px;
+   background-color: #007bff;
+   color: #fff;
+   text-decoration: none;
+   border-radius: 4px;
+ }
+
+
+ form input[type="text"],
+ form input[type="email"],
+ form textarea {
+   width: 95%;
+   padding: 10px;
+   margin-bottom: 10px;
+   border: none;
+   border-radius: 5px;
+   background-color: #555;
+   color: #fff;
+   transition: all ease 0.5s;
+ }
+
+ form input[type="text"]:focus {
+   box-shadow: 0 0 10px #Af4c;
+ }
+
+ form input[type="email"]:focus {
+   box-shadow: 0 0 10px #Af4c;
+ }
+
+ form textarea:focus {
+   box-shadow: 0 0 10px #Af4c;
+ }
+
+ form textarea {
+   height: 90px;
+   resize: both;
+   max-height: 200px;
+ }
+
+ .submit-button {
+   text-align: center;
+ }
+
+ button[type="submit"] {
+   background-color: #C63939;
+   color: #fff;
+   border: none;
+   padding: 10px 20px;
+   font-size: 18px;
+   cursor: pointer;
+   border-radius: 5px;
+   transition: 0.3s;
+   font-family: "Courier New";
+ }
+
+ form button[type="submit"]:hover {
+   box-shadow: 0 0 10px #45B39D;
+   background-color: #45B39D;
+ }
+
+ footer {
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   background-color: #102C54;
+   color: #fff;
+   padding: 10px;
+   text-align: center;
+ }
+
+ footer ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+ }
+
+ footer ul li {
+   display: inline;
+   margin-right: 10px;
+ }
+
+ i {
+   font-size: 24px;
+   border: none;
+   color: black;
+   background-color: white;
+   padding: 10px;
+   border-radius: 50%;
+   transition: all ease 0.3s;
+ }
+
+ .fa.fa-twitter::before {
+   content: "𝕏";
+ }
+
+ i:hover {
+   color: white;
+   background-color: #FFBF00;
+   box-shadow: 0 0 6px #FFBF00;
+ }

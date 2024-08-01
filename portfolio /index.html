@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title> My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+  <body>
+    <header>
+      <nav>
+        <ul class="sidebar">
+          <span onclick=hideSidebar() class="fa fa-close"></span><br>
+          <li><a href="#about">About</a></li><br>
+          <li><a href="#skills">Skills</a></li><br>
+          <li><a href="#projects">Projects</a></li><br>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <ul>
+          <li class="menu-button" onclick=showSidebar()><span class="fa fa-bars"></span></li>
+          <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+          <li class="hideOnMobile"><a href="#projects">Projects</a></li>
+          <li class="hideOnMobile"><a href="#skills">Skills</a></li>
+          <li class="hideOnMobile"><a href="#about">About</a></li>
+        </ul>
+        <img class="logo" src="https://i.ibb.co/28ynwQ8/my-logo.png" alt="my-logo">
+      </nav>
+    </header>
+    <section id="hero"><img src="https://i.ibb.co/6ZStV0t/my-image.jpg" alt="my-image">
+      <h1>Rahat Bin Sattar</h1>
+      <h2>
+        Full Stack Web Developer
+      </h2>
+    </section>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Welcome to my portfolio website! I am a passionate Web Developer with experience in HTML, CSS, and JavaScript etc. I love creating beautiful and functional websites that make an impact. Please take a look around to learn more about my skills and projects.</p>
+    </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML</li> <br>
+        <li>CSS</li> <br>
+        <li>Bootstrap</li> <br>
+        <li>GitHub</li> <br>
+        <li>JavaScript</li><br>
+        <li>JQuery</li> <br>
+        <li>JSON</li> <br>
+        <li>TypeScript</li> <br>
+        <li>React</li><br>
+        <li>Redux</li> <br>
+        <li>NodeJS</li><br>
+        <li>ExpressJS</li> <br>
+        <li>EJS</li> <br>
+        <li>MongoDB</li><br>
+        <li>MySQL</li> <br>
+        <li>PostgreSQL</li> <br>
+        <li>PassportJS</li>
+      </ul>
+    </section>
+    <section id="projects">
+      <h2>My Projects</h2>
+      <ul>
+        <div class="card">
+          <img src="image.jpg" alt="Image" class="card-image">
+          <div class="card-content">
+            <h3>Title</h3>
+            <p>Description of the card content.</p>
+            <a href="#" class="btn">View project</a>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="card">
+          <img src="image.jpg" alt="Image" class="card-image">
+          <div class="card-content">
+            <h3>Title</h3>
+            <p>Description of the card content.</p>
+            <a href="#" class="btn">View project</a>
+          </div>
+        </div>
+
+
+        <br>
+
+        <div class="card">
+          <img src="image.jpg" alt="Image" class="card-image">
+          <div class="card-content">
+            <h3>Title</h3>
+            <p>Description of the card content.</p>
+            <a href="#" class="btn">View project</a>
+          </div>
+        </div>
+
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form id="form" action="https://api.web3forms.com/submit" method="POST"> <input type="hidden" name="access_key" value="72267826-caa8-492b-872f-0332ec751675"> <input type="text" name="name" pattern="[A-Z0-9].+" minlength="3" maxlength="20" placeholder="Enter your full name" required> <input type="email" name="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="Enter your email" required> <textarea placeholder="Enter your message" name="message" minlength="23" maxlength="250" required></textarea>
+
+        <div class="submit-button">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </section>
+
+    <footer>
+      <ul>
+        <li>
+          <i class="fa fa-github"></i> </li>
+        <li> <i class="fa fa-twitter"></i></li>
+        <li><i class="fa fa-linkedin"></i></li>
+        <li><i class="fa fa-youtube-play"></i></li>
+        <li><i class="fa fa-facebook-square"></i></li>
+      </ul>
+      <p>copyright &copy; 2024 Rahat Bin Sattar. All Rights Reserved.</p>
+    </footer>
+  </body>
+<script src="script.js"></script>
+</html>
